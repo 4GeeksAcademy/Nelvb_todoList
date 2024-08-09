@@ -12,32 +12,39 @@
 */
 /* Establece el color de fondo del cuerpo de la página */
 body {
-    background-color: rgb(237, 174, 174); /* Color de fondo de la página */
+    background-color: black; /* Color de fondo de la página */
 }
 
 /* Estilos para el contenedor principal */
 .container {
-    display: flex; /* Usa un layout flexible para centrar el contenido */
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    margin: auto; /* Centra el contenedor verticalmente */
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del contenido a columna para que todo se alinee verticalmente */
+    align-items: center; /* Centramos horizontalmente el contenido */
+    max-width: 700px; /* Limitamos el ancho máximo del contenedor */
+    margin: 20px auto; /* Centramos el contenedor y añadimos un margen superior e inferior */
+    background-color: rgb(50, 47, 47); /* Fondo más claro para que contraste con el borde */
+    padding: 20px; /* Añadimos un padding general */
+    border-radius: 10px; /* Redondeamos las esquinas del contenedor */
 }
 
 /* Estilos para el encabezado h1 */
 h1 {
-    font-size: 100px; /* Tamaño de la fuente del encabezado */
+    font-size: 100px;
+    color: rgb(194, 185, 185); /* Tamaño de la fuente del encabezado */
 }
 
 /* Estilos para la tarjeta que contiene la lista de tareas */
 .tarjeta {
-    width: 600px; /* Ancho de la tarjeta */
-    height: auto; /* Altura automática según el contenido */
-    background-color: white; /* Color de fondo de la tarjeta */
-    padding: 20px; /* Espacio interno (padding) alrededor del contenido de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tarjeta */
-    border-radius: 10px; /* Bordes redondeados de la tarjeta */
-    margin-top: 20px; /* Espacio superior (margen) sobre la tarjeta */
+    width: 600px;
+    height: auto; /* Cambiamos a 'auto' para que el contenedor crezca según el contenido */
+    background-color: rgb(65, 62, 62); /* Añadimos un color de fondo para que el borde se vea mejor */
+    border: 2px solid black; /* Añadimos un borde negro */
+    border-radius: 10px; /* Redondeamos las esquinas del borde */
+    padding: 20px; /* Añadimos un poco de padding para que el contenido no toque el borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadimos una sombra para darle un poco de relieve */
+    color: lightgrey;
 }
+
 
 /* Estilos para la lista de tareas */
 .toDoTask-list {
@@ -69,4 +76,8 @@ input[type="text"] {
     margin-bottom: 10px; /* Espacio inferior (margen) debajo del input */
     border: 1px solid #ccc; /* Borde del input */
     border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.contador{
+    color: lightgrey;
 }
