@@ -10,3 +10,63 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+/* Establece el color de fondo del cuerpo de la página */
+body {
+    background-color: rgb(237, 174, 174); /* Color de fondo de la página */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Usa un layout flexible para centrar el contenido */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: auto; /* Centra el contenedor verticalmente */
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    font-size: 100px; /* Tamaño de la fuente del encabezado */
+}
+
+/* Estilos para la tarjeta que contiene la lista de tareas */
+.tarjeta {
+    width: 600px; /* Ancho de la tarjeta */
+    height: auto; /* Altura automática según el contenido */
+    background-color: white; /* Color de fondo de la tarjeta */
+    padding: 20px; /* Espacio interno (padding) alrededor del contenido de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados de la tarjeta */
+    margin-top: 20px; /* Espacio superior (margen) sobre la tarjeta */
+}
+
+/* Estilos para la lista de tareas */
+.toDoTask-list {
+    width: 100%; /* La lista ocupa el 100% del ancho del contenedor padre */
+}
+
+/* Estilos para cada ítem de tarea */
+.toDoTask-item {
+    display: flex; /* Usa un layout flexible para alinear los elementos dentro del ítem */
+    justify-content: space-between; /* Distribuye el espacio libre entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 10px; /* Espacio interno (padding) alrededor del contenido del ítem */
+    border-bottom: 1px solid #ccc; /* Línea inferior para separar los ítems */
+}
+
+/* Estilos para el botón de eliminar tarea */
+.toDoTask-item button {
+    background-color: red; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el input de texto */
+input[type="text"] {
+    width: 100%; /* El input ocupa el 100% del ancho del contenedor padre */
+    padding: 10px; /* Espacio interno (padding) dentro del input */
+    margin-bottom: 10px; /* Espacio inferior (margen) debajo del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
