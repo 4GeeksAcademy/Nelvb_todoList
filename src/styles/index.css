@@ -1,99 +1,85 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-/* Establece el color de fondo del cuerpo de la página */
 body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    background-image: url('https://img.freepik.com/fotos-premium/pizarra-blanco-representacion-3d-sobre-piso-madera_493806-8756.jpg?w=826'); /* Establece la imagen de fondo */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen de fondo */
+    background-image: url('https://img.freepik.com/fotos-premium/pizarra-blanco-representacion-3d-sobre-piso-madera_493806-8756.jpg?w=826'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
-/* Estilos para el contenedor principal */
 .container {
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección del contenido a columna para que todo se alinee verticalmente */
-    align-items: center; /* Centramos horizontalmente el contenido */
-    max-width: 700px; /* Limitamos el ancho máximo del contenedor */
-    margin: 100px auto; /* Centramos el contenedor y añadimos un margen superior e inferior */
-    background-color: rgb(50, 47, 47); /* Fondo más claro para que contraste con el borde */
-    padding: 20px; /* Añadimos un padding general */
-    border-radius: 10px; /* Redondeamos las esquinas del contenedor */
-    border: 1px solid lightgray; /* Añadimos un borde negro */
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 700px; 
+    margin: 100px auto; 
+    background-color: rgb(50, 47, 47); 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 1px solid lightgray; 
     box-shadow:  0px 0px  5px 1px lightgray;
 }
 
-/* Estilos para el encabezado h1 */
 h1 {
     font-size: 100px;
-    color: rgb(194, 185, 185); /* Tamaño de la fuente del encabezado */
+    color: rgb(194, 185, 185); 
+    text-align: center;
 }
 
 /* Estilos para la tarjeta que contiene la lista de tareas */
 .tarjeta {
     width: 600px;
-    height: auto; /* Cambiamos a 'auto' para que el contenedor crezca según el contenido */
-    background-color: rgb(65, 62, 62); /* Añadimos un color de fondo para que el borde se vea mejor */
-    border: 2px solid black; /* Añadimos un borde negro */
-    border-radius: 10px; /* Redondeamos las esquinas del borde */
-    padding: 20px; /* Añadimos un poco de padding para que el contenido no toque el borde */
-    box-shadow: 0 4px 8px rgba(115, 102, 102, 0.1); /* Añadimos una sombra para darle un poco de relieve */
+    height: auto; 
+    background-color: rgb(65, 62, 62); 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(115, 102, 102, 0.1); 
     color: lightgrey;
     box-shadow:  0px 0px  5px 1px lightgray;
 }
 
-
 /* Estilos para la lista de tareas */
 .toDoTask-list {
-    width: 100%; /* La lista ocupa el 100% del ancho del contenedor padre */
+    width: 100%; 
 }
 
 /* Estilos para cada ítem de tarea */
 .toDoTask-item {
-    display: flex; /* Usa un layout flexible para alinear los elementos dentro del ítem */
-    justify-content: space-between; /* Distribuye el espacio libre entre los elementos */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    padding: 10px; /* Espacio interno (padding) alrededor del contenido del ítem */
-    border-bottom: 1px solid #ccc; /* Línea inferior para separar los ítems */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
 }
 
 /* Estilos para el botón de eliminar tarea */
 .toDoTask-item button {
-    background-color: rgb(57, 55, 55); /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+    background-color: rgb(57, 55, 55); 
+    color: white; 
     border: 2px solid black;
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; 
+    cursor: pointer; 
     box-shadow:  0px 0px  2px 1px lightgray;
 }
 
 /* Estilos para el input de texto */
 input[type="text"] {
-    width: 100%; /* El input ocupa el 100% del ancho del contenedor padre */
-    padding: 10px; /* Espacio interno (padding) dentro del input */
-    margin-bottom: 10px; /* Espacio inferior (margen) debajo del input */
-    border: 1px solid #ccc; /* Borde del input */
-    border-radius: 5px; /* Bordes redondeados del input */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
     background-color: rgb(83, 78, 78);
     color: white;
 }
 
-.contador{
+/* Estilos para el contador de tareas */
+.contador {
     margin-top: 10px;
     color: lightgrey;
 }
