@@ -1,10 +1,10 @@
-
 body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
     margin: 0;
+    padding: 10px; /* Asegura que el contenido no toque los bordes de la pantalla */
     background-image: url('https://img.freepik.com/fotos-premium/pizarra-blanco-representacion-3d-sobre-piso-madera_493806-8756.jpg?w=826'); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,12 +16,13 @@ body {
     flex-direction: column; 
     align-items: center; 
     max-width: 700px; 
+    width: 100%; /* Se asegura de que el contenedor ocupe todo el ancho disponible */
     margin: 100px auto; 
     background-color: rgb(50, 47, 47); 
     padding: 20px; 
     border-radius: 10px; 
     border: 1px solid lightgray; 
-    box-shadow:  0px 0px  5px 1px lightgray;
+    box-shadow: 0px 0px 5px 1px lightgray;
 }
 
 h1 {
@@ -32,15 +33,16 @@ h1 {
 
 /* Estilos para la tarjeta que contiene la lista de tareas */
 .tarjeta {
-    width: 600px;
-    height: auto; 
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho del contenedor */
+    max-height: 300px; /* Limita la altura del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical cuando el contenido excede la altura */
     background-color: rgb(65, 62, 62); 
     border: 2px solid black; 
     border-radius: 10px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(115, 102, 102, 0.1); 
     color: lightgrey;
-    box-shadow:  0px 0px  5px 1px lightgray;
+    box-shadow: 0px 0px 5px 1px lightgray;
 }
 
 /* Estilos para la lista de tareas */
@@ -64,7 +66,12 @@ h1 {
     border: 2px solid black;
     border-radius: 5px; 
     cursor: pointer; 
-    box-shadow:  0px 0px  2px 1px lightgray;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    display: none; /* Oculta el botón por defecto */
+}
+
+.toDoTask-item:hover button {
+    display: inline-block; /* Muestra el botón cuando se pasa el ratón por encima de la tarea */
 }
 
 /* Estilos para el input de texto */
@@ -82,4 +89,20 @@ input[type="text"] {
 .contador {
     margin-top: 10px;
     color: lightgrey;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Asegura que el contenedor no sea más ancho que el 90% del ancho de la pantalla */
+        margin: 50px auto; /* Ajusta el margen superior para pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 80px; /* Ajusta el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    .tarjeta {
+        padding: 15px; /* Reduce el padding interno de la tarjeta */
+    }
 }
