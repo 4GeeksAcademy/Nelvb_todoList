@@ -31,9 +31,9 @@ const Tareas = ({ toDoTasks, setToDoTasks }) => {
             {toDoTasks.length === 0 ? (
                 <p>No hay tareas, añadir tareas</p>
             ) : ( // ')'cierra si la condicion es true, '(' abre si es falsa, como 'if else'.
-                toDoTasks.map((_, index) => (
+                toDoTasks.map((task, index) => (
                     <div key={index} className="toDoTask-item">
-                        {_}
+                        {task}
                         <button onClick={() => removeToDoTask(index)}>
                             <i className="fas fa-trash"></i>
                         </button>
